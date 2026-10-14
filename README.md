@@ -25,7 +25,7 @@ O build verifica TypeScript, gera assets e pré-renderiza as duas línguas em HT
 
 ## Configurar o conteúdo real
 
-Edite `src/content.ts`. O objeto `links` recebe e-mail (sem `mailto:`), LinkedIn, GitHub e os dois currículos. Para PDFs locais, coloque os arquivos em `public` e use, por exemplo, `/curriculo-erik-pt.pdf` e `/resume-erik-en.pdf`. Enquanto os valores estiverem vazios, o site exibe a pendência sem links falsos ou botões desabilitados.
+Edite `src/content.ts`. E-mail, LinkedIn e GitHub já estão configurados. Os currículos fornecidos por Erik estão disponíveis em `public/curriculo-erik-pt.pdf` (português) e `public/resume-erik-en.pdf` (inglês), com links na seção de contato. Para atualizar, substitua os PDFs mantendo esses nomes. Valores vazios continuam exibindo uma pendência explícita.
 
 Os estudos selecionados são recortes do trabalho profissional, não projetos públicos pessoais. Não adicionar links para sistemas internos. Confirmar qualquer detalhe de decisão técnica com Erik antes de ampliar a narrativa.
 
@@ -39,7 +39,7 @@ Defina `VITE_SITE_URL` com o domínio HTTPS definitivo antes do build. Isso gera
 4. **Hospedagem estática:** envie apenas o conteúdo de `dist` à raiz do domínio. Sirva `/en/` como `en/index.html`. O build atual assume publicação na raiz; subdiretórios como GitHub Pages de projeto exigem ajustar `base`, URLs de idioma e geração de metadados.
 5. Verifique `/`, `/en/`, navegação, contatos e PDFs na URL pública. Com domínio definido, verifique `/sitemap.xml` e `/robots.txt`.
 
-Nenhuma publicação foi feita automaticamente. Links e currículos ausentes são as pendências de conteúdo para o lançamento.
+O código está no repositório público `ErikRKT/portfolio` no GitHub. Contatos e currículos estão configurados; a hospedagem e o domínio definitivo ainda estão pendentes.
 
 `VERIFICATION.md` registra os testes executados e a pendência de comparação automática de fidelidade ao mockup. O funcionamento foi validado; o fluxo automático Impeccable permanece sem aprovação de fidelidade.
 

@@ -2,7 +2,7 @@ export type Language = 'pt' | 'en'
 
 // Populate only with URLs approved by Erik. Empty values render honest pending states.
 export const links = {
-  email: 'erikfreitas025@gmail.com', github: 'https://github.com/ErikRKT', linkedin: 'https://www.linkedin.com/in/erik-freitas-fontinele', resumePt: '', resumeEn: '',
+  email: 'erikfreitas025@gmail.com', github: 'https://github.com/ErikRKT', linkedin: 'https://www.linkedin.com/in/erik-freitas-fontinele', resumePt: '/curriculo-erik-pt.pdf', resumeEn: '/resume-erik-en.pdf',
 }
 
 export const content = {

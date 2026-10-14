@@ -26,7 +26,7 @@ Experiência profissional em sistemas governamentais, operações de transporte 
 
 - Português e inglês com seletor de idioma.
 - Início, sobre, experiência com estudos de caso anonimizados, projetos selecionados, competências, formação e contato.
-- Currículos em português e inglês, LinkedIn e GitHub: endereços e arquivos ainda não fornecidos.
+- Currículos em português e inglês fornecidos por Erik em 14/10/2026 e disponibilizados como PDFs locais; e-mail, LinkedIn e GitHub configurados em `src/content.ts`.
 - Não inventar métricas, resultados, datas, publicações ou experiência.
 - Não divulgar nomes de programas, dados internos, código confidencial ou dados de usuários.
 - Conteúdo demonstrativo e links pendentes devem ser explicitamente identificados.
