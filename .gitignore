@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+.env.local
+*.local
+.impeccable/build/
+.impeccable/review/
+.build-ssr/
+.env.*
+!.env.example
+theme-desktop.png
+theme-mobile.png
+.impeccable/questions/
+.impeccable/mocks/
+.impeccable/options.json
+.impeccable/regions.json
+.impeccable/direction-round.md

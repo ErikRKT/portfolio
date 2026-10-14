@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T10:26:53.2201507Z",
+  "title": "Design System: Erik Freitas Fontinele",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "displayName": "Ivory paper",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% .01 85)",
+          "oklch(26% .01 85)",
+          "oklch(38% .01 85)",
+          "oklch(49% .01 85)",
+          "oklch(61% .01 85)",
+          "oklch(72% .01 85)",
+          "oklch(84% .01 85)",
+          "oklch(95% .01 85)"
+        ],
+        "rampNote": "Synthesized preview ramp; not production tokens."
+      },
+      "ink": {
+        "displayName": "Dark ink",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% .01 145)",
+          "oklch(26% .01 145)",
+          "oklch(38% .01 145)",
+          "oklch(49% .01 145)",
+          "oklch(61% .01 145)",
+          "oklch(72% .01 145)",
+          "oklch(84% .01 145)",
+          "oklch(95% .01 145)"
+        ],
+        "rampNote": "Synthesized preview ramp; not production tokens."
+      },
+      "blue": {
+        "displayName": "Cobalt blue",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% .18 270)",
+          "oklch(26% .18 270)",
+          "oklch(38% .18 270)",
+          "oklch(49% .18 270)",
+          "oklch(61% .18 270)",
+          "oklch(72% .18 270)",
+          "oklch(84% .18 270)",
+          "oklch(95% .18 270)"
+        ],
+        "rampNote": "Synthesized preview ramp; not production tokens."
+      },
+      "muted": {
+        "displayName": "Muted ink",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% .01 145)",
+          "oklch(26% .01 145)",
+          "oklch(38% .01 145)",
+          "oklch(49% .01 145)",
+          "oklch(61% .01 145)",
+          "oklch(72% .01 145)",
+          "oklch(84% .01 145)",
+          "oklch(95% .01 145)"
+        ],
+        "rampNote": "Synthesized preview ramp; not production tokens."
+      },
+      "rule": {
+        "displayName": "Fine rule",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% .01 145)",
+          "oklch(26% .01 145)",
+          "oklch(38% .01 145)",
+          "oklch(49% .01 145)",
+          "oklch(61% .01 145)",
+          "oklch(72% .01 145)",
+          "oklch(84% .01 145)",
+          "oklch(95% .01 145)"
+        ],
+        "rampNote": "Synthesized preview ramp; not production tokens."
+      },
+      "blue-hover": {
+        "displayName": "Deep cobalt",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% .18 270)",
+          "oklch(26% .18 270)",
+          "oklch(38% .18 270)",
+          "oklch(49% .18 270)",
+          "oklch(61% .18 270)",
+          "oklch(72% .18 270)",
+          "oklch(84% .18 270)",
+          "oklch(95% .18 270)"
+        ],
+        "rampNote": "Synthesized preview ramp; not production tokens."
+      },
+      "blue-wash": {
+        "displayName": "Pale cobalt wash",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% .18 270)",
+          "oklch(26% .18 270)",
+          "oklch(38% .18 270)",
+          "oklch(49% .18 270)",
+          "oklch(61% .18 270)",
+          "oklch(72% .18 270)",
+          "oklch(84% .18 270)",
+          "oklch(95% .18 270)"
+        ],
+        "rampNote": "Synthesized preview ramp; not production tokens."
+      }
+    },
+    "typographyMeta": {
+      "body": {
+        "displayName": "Reading",
+        "purpose": "Paragraph text."
+      },
+      "case-body": {
+        "displayName": "Technical reading",
+        "purpose": "Case details."
+      },
+      "display": {
+        "displayName": "Identity display",
+        "purpose": "Hero name; desktop uses a container-aware override."
+      },
+      "title": {
+        "displayName": "Article title",
+        "purpose": "Case headings."
+      },
+      "label": {
+        "displayName": "Technical label",
+        "purpose": "Definition-list and disclosure headings."
+      },
+      "headline": {
+        "displayName": "Section heading",
+        "purpose": "Editorial section hierarchy."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "action-colors",
+        "purpose": "Button hover feedback.",
+        "value": "background-color .18s, color .18s"
+      },
+      {
+        "name": "disclosure-icon",
+        "purpose": "Plus rotates 45deg when open.",
+        "value": "transform .2s"
+      },
+      {
+        "name": "reduced-motion",
+        "purpose": "Respect reduced-motion preference.",
+        "value": "transition:none!important; animation:none!important; scroll-behavior:auto"
+      }
+    ],
+    "breakpoints": [
+      {
+        "value": "600px",
+        "name": "columns"
+      },
+      {
+        "value": "900px",
+        "name": "desktop"
+      },
+      {
+        "value": "1200px",
+        "name": "wide"
+      }
+    ],
+    "focus": {
+      "value": "outline:2px solid var(--blue); outline-offset:5px",
+      "purpose": "Shared visible keyboard focus."
+    },
+    "selection": {
+      "value": "background:var(--blue); color:var(--paper)",
+      "purpose": "Selected text."
+    }
+  },
+  "components": [
+    {
+      "css": ".ds-button{min-height:58px;font-family:var(--display);letter-spacing:0;justify-content:space-between;align-items:center;gap:.8rem;padding:1rem 1.1rem;font-size:1rem;text-decoration:none;transition:background-color .18s,color .18s;display:flex}.ds-primary{background:var(--blue);color:var(--paper);border:1px solid var(--blue)}.ds-primary:hover{background:#1834a0;color:var(--paper)}:focus-visible{outline:2px solid var(--blue);outline-offset:5px}@media(prefers-reduced-motion:reduce){*,::before,::after{transition:none!important;animation:none!important}}",
+      "html": "<a class=\"ds-button ds-primary\" href=\"#experience\">Explore experience<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></a>",
+      "refersTo": "button-primary",
+      "description": "Editorial anchor action.",
+      "name": "Primary action",
+      "kind": "button"
+    },
+    {
+      "css": ".ds-button{min-height:58px;font-family:var(--display);letter-spacing:0;justify-content:space-between;align-items:center;gap:.8rem;padding:1rem 1.1rem;font-size:1rem;text-decoration:none;transition:background-color .18s,color .18s;display:flex}.ds-secondary{border:1px solid var(--blue);color:var(--blue)}.ds-secondary:hover{background:#e3e8fb}:focus-visible{outline:2px solid var(--blue);outline-offset:5px}@media(prefers-reduced-motion:reduce){*,::before,::after{transition:none!important;animation:none!important}}",
+      "html": "<a class=\"ds-button ds-secondary\" href=\"#resume\">Résumé<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></a>",
+      "refersTo": "button-secondary",
+      "description": "Outlined résumé anchor.",
+      "name": "Secondary action",
+      "kind": "button"
+    },
+    {
+      "html": "<nav class=\"ds-navigation\" aria-label=\"Main navigation\"><a href=\"#about\">About</a><a href=\"#experience\">Experience</a></nav>",
+      "name": "Navigation",
+      "css": ".ds-navigation{display:flex;gap:1.5rem;font-family:DM Sans,sans-serif;color:var(--ink)}.ds-navigation a{min-height:44px;padding:.6rem 0;font-size:.9rem;text-decoration:none}.ds-navigation a:hover{color:var(--blue);text-decoration:underline;text-underline-offset:5px}:focus-visible{outline:2px solid var(--blue);outline-offset:5px}@media(prefers-reduced-motion:reduce){*,::before,::after{transition:none!important;animation:none!important}}",
+      "description": "Plain text navigation with underline feedback.",
+      "kind": "nav"
+    },
+    {
+      "html": "<ul class=\"ds-tech-list\"><li>Vue 3</li><li>TypeScript</li><li>REST</li></ul>",
+      "name": "Technical list",
+      "css": ".ds-tech-list{color:var(--blue);flex-wrap:wrap;gap:.5rem 1.2rem;padding:0;font-family:DM Sans,sans-serif;font-size:.8rem;list-style:none;display:flex}.ds-tech-list li{padding:.35rem 0}",
+      "description": "Plain wrapping technology names.",
+      "kind": "custom"
+    },
+    {
+      "html": "<details class=\"ds-disclosure\"><summary><span>Technical details</span><svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></summary><div class=\"ds-details\"><p>Project problem and technical decisions.</p></div></details>",
+      "name": "Native project disclosure",
+      "css": ".ds-disclosure{font-family:DM Sans,sans-serif;color:var(--ink)}.ds-disclosure summary{border-bottom:1px solid var(--rule);justify-content:space-between;align-items:center;gap:1rem;min-height:48px;padding:.65rem 0;font-size:.9rem;list-style:none;display:flex;cursor:pointer}.ds-disclosure summary::-webkit-details-marker{display:none}.ds-disclosure summary:hover{color:var(--blue)}.ds-disclosure summary svg{transition:transform .2s}.ds-disclosure[open] summary svg{transform:rotate(45deg)}.ds-details{padding:1.5rem 0;font-size:.94rem;line-height:1.7}:focus-visible{outline:2px solid var(--blue);outline-offset:5px}@media(prefers-reduced-motion:reduce){*,::before,::after{transition:none!important;animation:none!important}}",
+      "description": "Details expand inside an open article.",
+      "kind": "custom"
+    }
+  ],
+  "narrative": {
+    "keyCharacteristics": [
+      "Cobalt identity on ivory paper.",
+      "Editorial serif paired with functional sans-serif.",
+      "Open articles and fine structural rules.",
+      "Linear mobile reading and asymmetric desktop columns.",
+      "Native disclosure and visible keyboard focus."
+    ],
+    "northStar": "Revista de engenharia",
+    "dos": [
+      "**Do** preserve the self-hosted Gloock and DM Sans pairing.",
+      "**Do** preserve visible keyboard focus, selection contrast and reduced-motion behavior.",
+      "**Do** keep articles open and disclosures native.",
+      "**Do** preserve equivalent hierarchy in Portuguese and English."
+    ],
+    "overview": "An editorial engineering portfolio pairs a strong serif identity with functional sans-serif reading. Ivory paper, cobalt emphasis and dark ink make the work feel professional and personal. Portuguese and English share the same hierarchy.\n\nOpen articles, fine rules and asymmetric columns organize the evidence. The approved editorial direction is recorded in `.impeccable/surface.md`; this document records the implemented system rather than claiming pixel equivalence to the condensed mockup.",
+    "donts": [
+      "**Don't** introduce shadows or generic card grids into this editorial surface.",
+      "**Don't** convert plain technology lists into pills.",
+      "**Don't** ship the generated crest or development mockups as site artwork.",
+      "**Don't** claim that the automatic comp comparison passed: the expanded document differs from the condensed poster, as recorded in `.impeccable/review/final/report.json`.\r"
+    ],
+    "rules": [
+      {
+        "body": "Use cobalt to establish hierarchy and interaction; use muted rules to organize supporting material.",
+        "name": "Structural Color",
+        "section": "colors"
+      },
+      {
+        "body": "Use Gloock for editorial hierarchy and DM Sans for reading, navigation and technical labels.",
+        "name": "Two Voices",
+        "section": "typography"
+      },
+      {
+        "body": "Present cases as open editorial articles with separators and columns, preserving the page's flat reading surface.",
+        "name": "Open Article",
+        "section": "elevation"
+      }
+    ]
+  }
+}

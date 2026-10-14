@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f2efe7" />
+    <script>
+      (() => {
+        let saved;
+        try { saved = localStorage.getItem('portfolio-theme'); } catch {}
+        const dark = saved === 'dark' || (saved !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        document.querySelector('meta[name="theme-color"]').content = dark ? '#191c1b' : '#f2efe7';
+      })();
+    </script>
+    <title>Erik Freitas Fontinele — Desenvolvedor Full Stack</title>
+    <meta name="description" content="Portfólio de Erik Freitas Fontinele. Experiência com Vue, TypeScript, Java e Spring Boot em aplicações web e sistemas governamentais." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Erik Freitas Fontinele — Desenvolvedor Full Stack" />
+    <meta property="og:description" content="Experiência, contribuições técnicas e estudos de caso anonimizados." />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image" content="/social.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div id="app"><!--app-html--></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
